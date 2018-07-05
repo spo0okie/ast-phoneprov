@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hs_config>
+	<ipei>${TOLOWER(${MAC})}</ipei>
+	<hs_name>${USERNAME}</hs_name>
+	<sip>
+		<line>
+			<display_name>${USERNAME}</display_name>
+			<profile_name>profile1</profile_name>
+			<user_id>${USERNAME}</user_id>
+			<auth_id>${USERNAME}</auth_id>
+			<password>${SECRET}</password>
+			<ring_type>DID</ring_type>
+		</line>
+	</sip>
+	<hs_settings>
+		<force_apply>1</force_apply>
+		<admin>
+			<disable_private_phonebook>0</disable_private_phonebook>
+			<disable_shared_phonebook>0</disable_shared_phonebook>
+			<disable_conference>0</disable_conference>
+			<disable_transfer>0</disable_transfer>
+			<custom_ringtone>2</custom_ringtone>
+		</admin>
+		<user>
+			<auto_answer>0</auto_answer>
+			<cradle_answer>1</cradle_answer>
+			<cradle_hangup>1</cradle_hangup>
+			<remote_disconnect_tone_disable>0</remote_disconnect_tone_disable>
+			<disable_callwaiting_tone>0</disable_callwaiting_tone>
+			<lcd_backlight_cradle>0</lcd_backlight_cradle>
+			<key_up_idle_function>4</key_up_idle_function>
+			<key_down_idle_function>3</key_down_idle_function>
+			<key_left_idle_function>12</key_left_idle_function>
+			<key_right_idle_function>11</key_right_idle_function>
+			<key_up_call_function>0</key_up_call_function>
+			<key_down_call_function>0</key_down_call_function>
+			<key_left_call_function>14</key_left_call_function>
+			<key_right_call_function>13</key_right_call_function>
+			<left_softkey_idle_function>1</left_softkey_idle_function>
+			<right_softkey_idle_function>7</right_softkey_idle_function>
+			<left_softkey_call_function>16</left_softkey_call_function>
+			<right_softkey_call_function>17</right_softkey_call_function>
+			<mute_as_dnd>0</mute_as_dnd>
+		</user>
+	</hs_settings>
+</hs_config>
