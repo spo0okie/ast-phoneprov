@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flat-profile xmlns="http://www.sipura.net/xsd/SPA525G-SIP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sipura.net/xsd/SPA525G-SIP http://www.sipura.net/xsd/SPA525G-SIP/SPA525G-SIP-7-6-2c.xsd">
+
+
+  <!-- System Configuration -->
+
+  <Restricted_Access_Domains ua="na"></Restricted_Access_Domains>
+  <Enable_Web_Server ua="na">Yes</Enable_Web_Server>
+  <Web_Server_Port ua="na">80</Web_Server_Port>
+  <Enable_Web_Admin_Access ua="na">Yes</Enable_Web_Admin_Access>
+  <Admin_Password ua="na"></Admin_Password>
+  <User_Password ua="rw"></User_Password>
+  <User_Web_Password ua="rw"></User_Web_Password>
+  <SPA525-protocol ua="na">SIP</SPA525-protocol> <!-- options: SIP/SCCP -->
+  <SPA525-auto-detect-sccp ua="na">Yes</SPA525-auto-detect-sccp>
+  <SPA525-readonly ua="na">No</SPA525-readonly>
+  <Phone-UI-user-mode ua="na">No</Phone-UI-user-mode>
+  <WiFi_User_Access_Mode ua="na">Yes</WiFi_User_Access_Mode>
+
+  <!-- Power Settings -->
+
+  <PoE_Power_Required ua="na">Normal</PoE_Power_Required> <!-- options: Normal/Maximum -->
+
+  <!-- Internet Connection Type  -->
+
+  <Connection_Type ua="rw">DHCP</Connection_Type> <!-- options: DHCP/Static IP/PPPoE -->
+
+  <!--  Static IP Settings -->
+
+  <Static_IP ua="rw"></Static_IP>
+  <NetMask ua="rw"></NetMask>
+  <Gateway ua="rw"></Gateway>
+  <Lan_MTU ua="na">1500</Lan_MTU>
+  <Duplex_Mode ua="na">Auto</Duplex_Mode> <!-- options: Auto/10Mbps/Duplex/10Mbps/Half/100Mbps/Duplex/100Mbps/Half -->
+
+  <!--  PPPoE Settings -->
+
+  <PPPoE_Login_Name ua="rw"></PPPoE_Login_Name>
+  <PPPoE_Login_Password ua="rw"></PPPoE_Login_Password>
+  <PPPoE_Service_Name ua="rw"></PPPoE_Service_Name>
+
+  <!-- Optional Network Configuration -->
+
+  <HostName ua="rw"></HostName>
+  <Domain ua="rw"></Domain>
+  <Primary_DNS ua="rw"></Primary_DNS>
+  <Secondary_DNS ua="rw"></Secondary_DNS>
+  <DNS_Server_Order ua="na">Manual,DHCP</DNS_Server_Order> <!-- options: Manual/Manual,DHCP/DHCP,Manual -->
+  <Syslog_Server ua="na">${SERVER}</Syslog_Server>
+  <Debug_Server ua="na">${SERVER}</Debug_Server>
+  <Debug_Level ua="na">3</Debug_Level> <!-- options: 0/1/2/3 -->
+  <Layer_2_Logging ua="na">No</Layer_2_Logging>
+  <NTP_Enable ua="na">Yes</NTP_Enable>
+  <Primary_NTP_Server ua="na"></Primary_NTP_Server>
+  <Secondary_NTP_Server ua="na"></Secondary_NTP_Server>
+  <Enable_Bonjour ua="na">No</Enable_Bonjour>
+  <SSL_Key_Negotiation ua="na">RSA</SSL_Key_Negotiation> <!-- options: RSA/Default -->
+  <Enable_SSLv3 ua="na">No</Enable_SSLv3>
+
+  <!-- VLAN Settings -->
+
+  <Enable_VLAN ua="rw">No</Enable_VLAN>
+  <VLAN_ID ua="rw">1</VLAN_ID>
+  <PC_Port_VLAN_Highest_Priority ua="na">No Limit</PC_Port_VLAN_Highest_Priority> <!-- options: 0/1/2/3/4/5/6/7/No Limit -->
+  <Enable_PC_Port_VLAN_Tagging ua="na">No</Enable_PC_Port_VLAN_Tagging>
+  <PC_Port_VLAN_ID ua="na">1</PC_Port_VLAN_ID>
+  <Enable_CDP ua="na">Yes</Enable_CDP>
+  <Enable_LLDP-MED ua="na">Yes</Enable_LLDP-MED>
+  <Network_Startup_Delay ua="na">3</Network_Startup_Delay>
+
+  <!-- Wi-Fi Settings -->
+
+  <SPA525-wifi-on ua="rw">No</SPA525-wifi-on>
+
+  <!-- Bluetooth Settings -->
+
+  <Enable_BT ua="rw">No</Enable_BT>
+
+  <!--  VPN Settings -->
+
+  <VPN_Server ua="rw"></VPN_Server>
+  <VPN_User_Name ua="rw"></VPN_User_Name>
+  <VPN_Password ua="rw"></VPN_Password>
+  <VPN_Tunnel_Group ua="na"></VPN_Tunnel_Group>
+  <Connect_on_Bootup ua="rw">No</Connect_on_Bootup>
+
+  <!-- Inventory Settings -->
+
+  <Asset_ID ua="na"></Asset_ID>
+
+  <!-- Configuration Profile -->
+
+  <Provision_Enable ua="na">Yes</Provision_Enable>
+  <Resync_On_Reset ua="na">Yes</Resync_On_Reset>
+  <Resync_Random_Delay ua="na">2</Resync_Random_Delay>
+  <Resync_At__HHmm_ ua="na"></Resync_At__HHmm_>
+  <Resync_At_Random_Delay ua="na">600</Resync_At_Random_Delay>
+  <Resync_Periodic ua="na">3600</Resync_Periodic>
+  <Resync_Error_Retry_Delay ua="na">3600</Resync_Error_Retry_Delay>
+  <Forced_Resync_Delay ua="na">14400</Forced_Resync_Delay>
+  <Resync_From_SIP ua="na">Yes</Resync_From_SIP>
+  <Resync_After_Upgrade_Attempt ua="na">Yes</Resync_After_Upgrade_Attempt>
+  <Resync_Trigger_1 ua="na"></Resync_Trigger_1>
+  <Resync_Trigger_2 ua="na"></Resync_Trigger_2>
+  <Resync_Fails_On_FNF ua="na">Yes</Resync_Fails_On_FNF>
+  <Profile_Rule ua="na">/spa$PSN.cfg</Profile_Rule>
+  <Profile_Rule_B ua="na">/Cisco/SPA525G2/$MA.cfg</Profile_Rule_B>
+  <Profile_Rule_C ua="na"></Profile_Rule_C>
+  <Profile_Rule_D ua="na"></Profile_Rule_D>
+  <DHCP_Option_To_Use ua="na">66,160,159,150,60,43,125</DHCP_Option_To_Use>
+  <Transport_Protocol ua="na">http</Transport_Protocol> <!-- options: none/tftp/http/https -->
+  <Log_Resync_Request_Msg ua="na">$PN $MAC -- Requesting resync $SCHEME://$SERVIP:$PORT$PATH</Log_Resync_Request_Msg>
+  <Log_Resync_Success_Msg ua="na">$PN $MAC -- Successful resync $SCHEME://$SERVIP:$PORT$PATH</Log_Resync_Success_Msg>
+  <Log_Resync_Failure_Msg ua="na">$PN $MAC -- Resync failed: $ERR</Log_Resync_Failure_Msg>
+  <HTTP_Report_Method ua="na">POST</HTTP_Report_Method> <!-- options: POST/PUT -->
+  <Report_Rule ua="na"></Report_Rule>
+  <User_Configurable_Resync ua="na">Yes</User_Configurable_Resync>
+
+  <!-- Firmware Upgrade -->
+
+  <Upgrade_Enable ua="na">Yes</Upgrade_Enable>
+  <Upgrade_Error_Retry_Delay ua="na">3600</Upgrade_Error_Retry_Delay>
+  <Downgrade_Rev_Limit ua="na"></Downgrade_Rev_Limit>
+  <Upgrade_Rule ua="na"> http://${SERVER}:8088/phoneprov/spa525g-7-6-2c-bt.bin </Upgrade_Rule>
+  <Log_Upgrade_Request_Msg ua="na">$PN $MAC -- Requesting upgrade $SCHEME://$SERVIP:$PORT$PATH</Log_Upgrade_Request_Msg>
+  <Log_Upgrade_Success_Msg ua="na">$PN $MAC -- Successful upgrade $SCHEME://$SERVIP:$PORT$PATH -- $ERR</Log_Upgrade_Success_Msg>
+  <Log_Upgrade_Failure_Msg ua="na">$PN $MAC -- Upgrade failed: $ERR</Log_Upgrade_Failure_Msg>
+  <License_Keys ua="na"></License_Keys>
+
+  <!-- CA Settings -->
+
+  <Custom_CA_URL ua="na"></Custom_CA_URL>
+
+  <!-- General Purpose Parameters -->
+
+  <GPP_A ua="na"></GPP_A>
+  <GPP_B ua="na"></GPP_B>
+  <GPP_C ua="na"></GPP_C>
+  <GPP_D ua="na"></GPP_D>
+  <GPP_E ua="na"></GPP_E>
+  <GPP_F ua="na"></GPP_F>
+  <GPP_G ua="na"></GPP_G>
+  <GPP_H ua="na"></GPP_H>
+  <GPP_I ua="na"></GPP_I>
+  <GPP_J ua="na"></GPP_J>
+  <GPP_K ua="na"></GPP_K>
+  <GPP_L ua="na"></GPP_L>
+  <GPP_M ua="na"></GPP_M>
+  <GPP_N ua="na"></GPP_N>
+  <GPP_O ua="na"></GPP_O>
+  <GPP_P ua="na"></GPP_P>
+  <GPP_SA ua="na"></GPP_SA>
+  <GPP_SB ua="na"></GPP_SB>
+  <GPP_SC ua="na"></GPP_SC>
+  <GPP_SD ua="na"></GPP_SD>
+
+  <!-- SIP Parameters -->
+
+  <Max_Forward ua="na">70</Max_Forward>
+  <Max_Redirection ua="na">5</Max_Redirection>
+  <Max_Auth ua="na">2</Max_Auth>
+  <SIP_User_Agent_Name ua="na">$VERSION</SIP_User_Agent_Name>
+  <SIP_Server_Name ua="na">$VERSION</SIP_Server_Name>
+  <SIP_Reg_User_Agent_Name ua="na"></SIP_Reg_User_Agent_Name>
+  <SIP_Accept_Language ua="na"></SIP_Accept_Language>
+  <DTMF_Relay_MIME_Type ua="na">application/dtmf-relay</DTMF_Relay_MIME_Type>
+  <Hook_Flash_MIME_Type ua="na">application/hook-flash</Hook_Flash_MIME_Type>
+  <Remove_Last_Reg ua="na">No</Remove_Last_Reg>
+  <Use_Compact_Header ua="na">No</Use_Compact_Header>
+  <Escape_Display_Name ua="na">No</Escape_Display_Name>
+  <SIP-B_Enable ua="na">No</SIP-B_Enable>
+  <Talk_Package ua="na">No</Talk_Package>
+  <Hold_Package ua="na">No</Hold_Package>
+  <Conference_Package ua="na">No</Conference_Package>
+  <Notify_Conference ua="na">No</Notify_Conference>
+  <RFC_2543_Call_Hold ua="na">Yes</RFC_2543_Call_Hold>
+  <Random_REG_CID_On_Reboot ua="na">No</Random_REG_CID_On_Reboot>
+  <Mark_All_AVT_Packets ua="na">Yes</Mark_All_AVT_Packets>
+  <SIP_TCP_Port_Min ua="na">5060</SIP_TCP_Port_Min>
+  <SIP_TCP_Port_Max ua="na">5080</SIP_TCP_Port_Max>
+  <CTI_Enable ua="na">No</CTI_Enable>
+  <Caller_ID_Header ua="na">PAID-RPID-FROM</Caller_ID_Header> <!-- options: PAID-RPID-FROM/PAID-FROM/RPID-PAID-FROM/RPID-FROM/FROM -->
+  <SRTP_Method ua="na">x-sipura</SRTP_Method> <!-- options: x-sipura/s-descriptor -->
+  <Hold_Target_Before_REFER ua="na">No</Hold_Target_Before_REFER>
+  <Dialog_SDP_Enable ua="na">No</Dialog_SDP_Enable>
+  <Keep_Referee_When_REFER_Failed ua="na">No</Keep_Referee_When_REFER_Failed>
+  <Display_Diversion_Info ua="na">No</Display_Diversion_Info>
+  <Display_Anonymous_From_Header ua="na">No</Display_Anonymous_From_Header>
+  <Sip_Accept_Encoding ua="na">none</Sip_Accept_Encoding> <!-- options: none/gzip -->
+  <Disable_Local_Name_To_Header ua="na">No</Disable_Local_Name_To_Header>
+
+  <!-- SIP Timer Values (sec) -->
+
+  <SIP_T1 ua="na">.5</SIP_T1>
+  <SIP_T2 ua="na">4</SIP_T2>
+  <SIP_T4 ua="na">5</SIP_T4>
+  <SIP_Timer_B ua="na">2</SIP_Timer_B>
+  <SIP_Timer_F ua="na">16</SIP_Timer_F>
+  <SIP_Timer_H ua="na">16</SIP_Timer_H>
+  <SIP_Timer_D ua="na">16</SIP_Timer_D>
+  <SIP_Timer_J ua="na">16</SIP_Timer_J>
+  <INVITE_Expires ua="na">240</INVITE_Expires>
+  <ReINVITE_Expires ua="na">30</ReINVITE_Expires>
+  <Reg_Min_Expires ua="na">1</Reg_Min_Expires>
+  <Reg_Max_Expires ua="na">7200</Reg_Max_Expires>
+  <Reg_Retry_Intvl ua="na">30</Reg_Retry_Intvl>
+  <Reg_Retry_Long_Intvl ua="na">1200</Reg_Retry_Long_Intvl>
+  <Reg_Retry_Random_Delay ua="na"></Reg_Retry_Random_Delay>
+  <Reg_Retry_Long_Random_Delay ua="na"></Reg_Retry_Long_Random_Delay>
+  <Reg_Retry_Intvl_Cap ua="na"></Reg_Retry_Intvl_Cap>
+  <Sub_Min_Expires ua="na">10</Sub_Min_Expires>
+  <Sub_Max_Expires ua="na">7200</Sub_Max_Expires>
+  <Sub_Retry_Intvl ua="na">10</Sub_Retry_Intvl>
+
+  <!-- Response Status Code Handling -->
+
+  <SIT1_RSC ua="na"></SIT1_RSC>
+  <SIT2_RSC ua="na"></SIT2_RSC>
+  <SIT3_RSC ua="na"></SIT3_RSC>
+  <SIT4_RSC ua="na"></SIT4_RSC>
+  <Try_Backup_RSC ua="na"></Try_Backup_RSC>
+  <Retry_Reg_RSC ua="na"></Retry_Reg_RSC>
+
+  <!-- RTP Parameters -->
+
+  <RTP_Port_Min ua="na">16384</RTP_Port_Min>
+  <RTP_Port_Max ua="na">16482</RTP_Port_Max>
+  <RTP_Packet_Size ua="na">0.030</RTP_Packet_Size>
+  <Max_RTP_ICMP_Err ua="na">0</Max_RTP_ICMP_Err>
+  <RTCP_Tx_Interval ua="na">0</RTCP_Tx_Interval>
+  <No_UDP_Checksum ua="na">No</No_UDP_Checksum>
+  <Symmetric_RTP ua="na">No</Symmetric_RTP>
+  <Stats_In_BYE ua="na">No</Stats_In_BYE>
+
+  <!-- SDP Payload Types -->
+
+  <AVT_Dynamic_Payload ua="na">101</AVT_Dynamic_Payload>
+  <INFOREQ_Dynamic_Payload ua="na"></INFOREQ_Dynamic_Payload>
+  <G726r16_Dynamic_Payload ua="na">98</G726r16_Dynamic_Payload>
+  <G726r24_Dynamic_Payload ua="na">97</G726r24_Dynamic_Payload>
+  <G726r32_Dynamic_Payload ua="na">2</G726r32_Dynamic_Payload>
+  <G726r40_Dynamic_Payload ua="na">96</G726r40_Dynamic_Payload>
+  <G729b_Dynamic_Payload ua="na">99</G729b_Dynamic_Payload>
+  <L16_Dynamic_Payload ua="na">104</L16_Dynamic_Payload>
+  <EncapRTP_Dynamic_Payload ua="na">112</EncapRTP_Dynamic_Payload>
+  <RTP-Start-Loopback_Dynamic_Payload ua="na">113</RTP-Start-Loopback_Dynamic_Payload>
+  <RTP-Start-Loopback_Codec ua="na">G711u</RTP-Start-Loopback_Codec> <!-- options: G711u/G711a/G726-32/G729a/G722 -->
+  <AVT_Codec_Name ua="na">telephone-event</AVT_Codec_Name>
+  <G711u_Codec_Name ua="na">PCMU</G711u_Codec_Name>
+  <G711a_Codec_Name ua="na">PCMA</G711a_Codec_Name>
+  <G726r32_Codec_Name ua="na">G726-32</G726r32_Codec_Name>
+  <G729a_Codec_Name ua="na">G729a</G729a_Codec_Name>
+  <G729b_Codec_Name ua="na">G729ab</G729b_Codec_Name>
+  <G722_Codec_Name ua="na">G722</G722_Codec_Name>
+  <L16_Codec_Name ua="na">L16</L16_Codec_Name>
+  <EncapRTP_Codec_Name ua="na">encaprtp</EncapRTP_Codec_Name>
+
+  <!-- NAT Support Parameters -->
+
+  <Handle_VIA_received ua="na">No</Handle_VIA_received>
+  <Handle_VIA_rport ua="na">No</Handle_VIA_rport>
+  <Insert_VIA_received ua="na">No</Insert_VIA_received>
+  <Insert_VIA_rport ua="na">No</Insert_VIA_rport>
+  <Substitute_VIA_Addr ua="na">No</Substitute_VIA_Addr>
+  <Send_Resp_To_Src_Port ua="na">No</Send_Resp_To_Src_Port>
+  <STUN_Enable ua="na">No</STUN_Enable>
+  <STUN_Test_Enable ua="na">No</STUN_Test_Enable>
+  <STUN_Server ua="na"></STUN_Server>
+  <EXT_IP ua="na"></EXT_IP>
+  <EXT_RTP_Port_Min ua="na"></EXT_RTP_Port_Min>
+  <NAT_Keep_Alive_Intvl ua="na">15</NAT_Keep_Alive_Intvl>
+  <Redirect_Keep_Alive ua="na">No</Redirect_Keep_Alive>
+
+  <!-- Linksys Key System Parameters -->
+
+  <Linksys_Key_System ua="na">No</Linksys_Key_System>
+  <Multicast_Address ua="na">224.168.168.168:6061</Multicast_Address>
+  <Key_System_Auto_Discovery ua="na">Yes</Key_System_Auto_Discovery>
+  <Key_System_IP_Address ua="na"></Key_System_IP_Address>
+  <Force_LAN_Codec ua="na">none</Force_LAN_Codec> <!-- options: none/G711u/G711a -->
+  <Auto_Ans_GrPage_On_Active_Call ua="na">Yes</Auto_Ans_GrPage_On_Active_Call>
+
+  <!-- General -->
+
+  <Line_Enable_1_ ua="na">Yes</Line_Enable_1_>
+
+  <!-- Share Line Appearance -->
+
+  <Share_Ext_1_ ua="na">private</Share_Ext_1_> <!-- options: private/shared -->
+  <Shared_User_ID_1_ ua="na"></Shared_User_ID_1_>
+  <Subscription_Expires_1_ ua="na">3600</Subscription_Expires_1_>
+  <Restrict_MWI_1_ ua="na">No</Restrict_MWI_1_>
+
+  <!-- NAT Settings -->
+
+  <NAT_Mapping_Enable_1_ ua="na">No</NAT_Mapping_Enable_1_>
+  <NAT_Keep_Alive_Enable_1_ ua="na">No</NAT_Keep_Alive_Enable_1_>
+  <NAT_Keep_Alive_Msg_1_ ua="na">$NOTIFY</NAT_Keep_Alive_Msg_1_>
+  <NAT_Keep_Alive_Dest_1_ ua="na">$PROXY</NAT_Keep_Alive_Dest_1_>
+
+  <!-- Network Settings -->
+
+  <SIP_TOS_DiffServ_Value_1_ ua="na">0x68</SIP_TOS_DiffServ_Value_1_>
+  <SIP_CoS_Value_1_ ua="na">3</SIP_CoS_Value_1_> <!-- options: 0/1/2/3/4/5/6/7 -->
+  <RTP_TOS_DiffServ_Value_1_ ua="na">0xb8</RTP_TOS_DiffServ_Value_1_>
+  <RTP_CoS_Value_1_ ua="na">6</RTP_CoS_Value_1_> <!-- options: 0/1/2/3/4/5/6/7 -->
+  <Network_Jitter_Level_1_ ua="na">medium</Network_Jitter_Level_1_> <!-- options: low/medium/high/very high/extremely high -->
+  <Jitter_Buffer_Adjustment_1_ ua="na">up and down</Jitter_Buffer_Adjustment_1_> <!-- options: up and down/up only/down only/disable -->
+
+  <!-- SIP Settings -->
+
+  <SIP_Transport_1_ ua="na">UDP</SIP_Transport_1_> <!-- options: UDP/TCP/TLS -->
+  <SIP_Port_1_ ua="na">5060</SIP_Port_1_>
+  <SIP_100REL_Enable_1_ ua="na">No</SIP_100REL_Enable_1_>
+  <EXT_SIP_Port_1_ ua="na"></EXT_SIP_Port_1_>
+  <Auth_Resync-Reboot_1_ ua="na">Yes</Auth_Resync-Reboot_1_>
+  <SIP_Proxy-Require_1_ ua="na"></SIP_Proxy-Require_1_>
+  <SIP_Remote-Party-ID_1_ ua="na">No</SIP_Remote-Party-ID_1_>
+  <Referor_Bye_Delay_1_ ua="na">4</Referor_Bye_Delay_1_>
+  <Refer-To_Target_Contact_1_ ua="na">No</Refer-To_Target_Contact_1_>
+  <Referee_Bye_Delay_1_ ua="na">0</Referee_Bye_Delay_1_>
+  <SIP_Debug_Option_1_ ua="na">none</SIP_Debug_Option_1_> <!-- options: none/1-line/1-line excl. OPT/1-line excl. NTFY/1-line excl. REG/1-line excl. OPT|NTFY|REG/full/full excl. OPT/full excl. NTFY/full excl. REG/full excl. OPT|NTFY|REG -->
+  <Refer_Target_Bye_Delay_1_ ua="na">0</Refer_Target_Bye_Delay_1_>
+  <Sticky_183_1_ ua="na">No</Sticky_183_1_>
+  <Auth_INVITE_1_ ua="na">No</Auth_INVITE_1_>
+  <Ntfy_Refer_On_1xx-To-Inv_1_ ua="na">Yes</Ntfy_Refer_On_1xx-To-Inv_1_>
+  <Use_Anonymous_With_RPID_1_ ua="na">Yes</Use_Anonymous_With_RPID_1_>
+  <Set_G729_annexb_1_ ua="na">none</Set_G729_annexb_1_> <!-- options: none/no/yes/follow silence supp setting -->
+  <Voice_Quality_Report_Address_1_ ua="na"></Voice_Quality_Report_Address_1_>
+  <User_Equal_Phone_1_ ua="na">No</User_Equal_Phone_1_>
+  <Outbound_call_w_o_BLA_dialog_1_ ua="na">Yes</Outbound_call_w_o_BLA_dialog_1_>
+
+  <!-- Call Feature Settings -->
+
+  <Blind_Attn-Xfer_Enable_1_ ua="na">No</Blind_Attn-Xfer_Enable_1_>
+  <MOH_Server_1_ ua="na"></MOH_Server_1_>
+  <Message_Waiting_1_ ua="na">No</Message_Waiting_1_>
+  <Auth_Page_1_ ua="na">No</Auth_Page_1_>
+  <Default_Ring__1__ ua="rw">2</Default_Ring__1__> <!-- options: No Ring/1/2/3/4/5/6/7/8/9/10/11/12/User 1/User 2 -->
+  <Use_Default_Ring__1__ ua="na">No</Use_Default_Ring__1__>
+  <Auth_Page_Realm_1_ ua="na"></Auth_Page_Realm_1_>
+  <Conference_Bridge_URL_1_ ua="na"></Conference_Bridge_URL_1_>
+  <Auth_Page_Password_1_ ua="na"></Auth_Page_Password_1_>
+  <Mailbox_ID_1_ ua="na"></Mailbox_ID_1_>
+  <Voice_Mail_Server_1_ ua="na"></Voice_Mail_Server_1_>
+  <Voice_Mail_Subscribe_Interval_1_ ua="na">86400</Voice_Mail_Subscribe_Interval_1_>
+  <State_Agent_1_ ua="na"></State_Agent_1_>
+  <CFWD_Notify_Serv_1_ ua="na">No</CFWD_Notify_Serv_1_>
+  <CFWD_Notifier_1_ ua="na"></CFWD_Notifier_1_>
+  <Broadsoft_ACD_1_ ua="na">No</Broadsoft_ACD_1_>
+  <Auto_Ans_Page_On_Active_Call_1_ ua="na">Yes</Auto_Ans_Page_On_Active_Call_1_>
+  <Feature_Key_Sync_1_ ua="na">No</Feature_Key_Sync_1_>
+  <Call_Park_Monitor_Enable_1_ ua="na">No</Call_Park_Monitor_Enable_1_>
+  <Enable_Broadsoft_Hoteling_1_ ua="na">No</Enable_Broadsoft_Hoteling_1_>
+  <Hoteling_Guest_User_ID_1_ ua="na"></Hoteling_Guest_User_ID_1_>
+  <Hoteling_Subscription_Expires_1_ ua="na">3600</Hoteling_Subscription_Expires_1_>
+  <Hoteling_Guest_Password_1_ ua="na"></Hoteling_Guest_Password_1_>
+
+  <!-- Proxy and Registration -->
+
+  <Proxy_1_ ua="na">${SERVER}</Proxy_1_>
+  <Outbound_Proxy_1_ ua="na"></Outbound_Proxy_1_>
+  <Alternate_Proxy_1_ ua="na">${BACKUP_SERVER}</Alternate_Proxy_1_>
+  <Alternate_Outbound_Proxy_1_ ua="na"></Alternate_Outbound_Proxy_1_>
+  <Use_Outbound_Proxy_1_ ua="na">No</Use_Outbound_Proxy_1_>
+  <Use_OB_Proxy_In_Dialog_1_ ua="na">Yes</Use_OB_Proxy_In_Dialog_1_>
+  <Register_1_ ua="na">Yes</Register_1_>
+  <Make_Call_Without_Reg_1_ ua="na">No</Make_Call_Without_Reg_1_>
+  <Register_Expires_1_ ua="na">3600</Register_Expires_1_>
+  <Ans_Call_Without_Reg_1_ ua="na">No</Ans_Call_Without_Reg_1_>
+  <Use_DNS_SRV_1_ ua="na">No</Use_DNS_SRV_1_>
+  <DNS_SRV_Auto_Prefix_1_ ua="na">No</DNS_SRV_Auto_Prefix_1_>
+  <Proxy_Fallback_Intvl_1_ ua="na">3600</Proxy_Fallback_Intvl_1_>
+  <Proxy_Redundancy_Method_1_ ua="na">Normal</Proxy_Redundancy_Method_1_> <!-- options: Normal/Based on SRV Port -->
+  <Dual_Registration_1_ ua="na">Yes</Dual_Registration_1_>
+  <Auto_Register_When_Failover_1_ ua="na">No</Auto_Register_When_Failover_1_>
+
+  <!-- Subscriber Information -->
+
+  <Display_Name_1_ ua="na">${USERNAME}</Display_Name_1_>
+  <User_ID_1_ ua="na">${USERNAME}</User_ID_1_>
+  <Password_1_ ua="na">${SECRET}</Password_1_>
+  <Use_Auth_ID_1_ ua="na">No</Use_Auth_ID_1_>
+  <Auth_ID_1_ ua="na"></Auth_ID_1_>
+  <Reversed_Auth_Realm_1_ ua="na"></Reversed_Auth_Realm_1_>
+  <Mini_Certificate_1_ ua="na"></Mini_Certificate_1_>
+  <SRTP_Private_Key_1_ ua="na"></SRTP_Private_Key_1_>
+  <Resident_Online_Number_1_ ua="na"></Resident_Online_Number_1_>
+  <SIP_URI_1_ ua="na"></SIP_URI_1_>
+
+  <!-- Audio Configuration -->
+
+  <Preferred_Codec_1_ ua="na">G711a</Preferred_Codec_1_> <!-- options: G711u/G711a/G726-32/G729a/G722 -->
+  <Use_Pref_Codec_Only_1_ ua="na">No</Use_Pref_Codec_Only_1_>
+  <Second_Preferred_Codec_1_ ua="na">Unspecified</Second_Preferred_Codec_1_> <!-- options: Unspecified/G711u/G711a/G726-32/G729a/G722 -->
+  <Third_Preferred_Codec_1_ ua="na">Unspecified</Third_Preferred_Codec_1_> <!-- options: Unspecified/G711u/G711a/G726-32/G729a/G722 -->
+  <G711u_Enable_1_ ua="na">Yes</G711u_Enable_1_>
+  <G711a_Enable_1_ ua="na">Yes</G711a_Enable_1_>
+  <G729a_Enable_1_ ua="na">Yes</G729a_Enable_1_>
+  <G722_Enable_1_ ua="na">Yes</G722_Enable_1_>
+  <L16_Enable_1_ ua="na">Yes</L16_Enable_1_>
+  <G726-32_Enable_1_ ua="na">Yes</G726-32_Enable_1_>
+  <Release_Unused_Codec_1_ ua="na">Yes</Release_Unused_Codec_1_>
+  <DTMF_Process_AVT_1_ ua="na">Yes</DTMF_Process_AVT_1_>
+  <Silence_Supp_Enable_1_ ua="na">No</Silence_Supp_Enable_1_>
+  <DTMF_Tx_Method_1_ ua="na">Auto</DTMF_Tx_Method_1_> <!-- options: InBand/AVT/INFO/Auto/InBand+INFO/AVT+INFO -->
+  <DTMF_Tx_Volume_for_AVT_Packet_1_ ua="na">0</DTMF_Tx_Volume_for_AVT_Packet_1_>
+  <Use_Remote_Pref_Codec_1_ ua="na">No</Use_Remote_Pref_Codec_1_>
+  <Codec_Negotiation_1_ ua="na">Default</Codec_Negotiation_1_> <!-- options: Default/List All -->
+
+  <!-- Dial Plan -->
+
+  <Dial_Plan_1_ ua="na">(*xx|[3469]11|0|00|[2-9]xxxxxx|1xxx[2-9]xxxxxxS0|xxxxxxxxxxxx.)</Dial_Plan_1_>
+  <Caller_ID_Map_1_ ua="na"></Caller_ID_Map_1_>
+  <Enable_IP_Dialing_1_ ua="na">Yes</Enable_IP_Dialing_1_>
+  <Emergency_Number_1_ ua="na"></Emergency_Number_1_>
+
+  <!-- General -->
+
+
+  <!-- Audio Volume -->
+
+  <Ringer_Volume ua="rw">9</Ringer_Volume>
+  <Speaker_Volume ua="rw">11</Speaker_Volume>
+  <Handset_Volume ua="rw">9</Handset_Volume>
+  <Headset_Volume ua="rw">9</Headset_Volume>
+  <Bluetooth_Volume ua="rw">9</Bluetooth_Volume>
+  <Handset_Version ua="rw">Auto</Handset_Version> <!-- options: Auto/Original/v3 -->
+  <Deep_Bass ua="rw">Yes</Deep_Bass>
+  <Electronic_HookSwitch_Control ua="na">No</Electronic_HookSwitch_Control>
+  <Speakerphone_Enable ua="na">Yes</Speakerphone_Enable>
+  <Mute_Enable ua="na">Yes</Mute_Enable>
+
+  <!-- Screen -->
+
+  <Screen_Saver_Enable ua="rw">No</Screen_Saver_Enable>
+  <Screen_Saver_Type ua="rw">Black Background</Screen_Saver_Type> <!-- options: Black Background/Gray Background/Black/Gray Rotation/Picture Rotation/Digital Frame/Download Picture/Clock -->
+  <Screen_Saver_Trigger_Time ua="rw">300</Screen_Saver_Trigger_Time>
+  <Screen_Saver_Refresh_Time ua="rw">10</Screen_Saver_Refresh_Time>
+  <Back_Light_Enable ua="na">No</Back_Light_Enable>
+  <Back_Light_Timer__sec_ ua="na">30</Back_Light_Timer__sec_>
+  <LCD_Contrast ua="rw">15</LCD_Contrast>
+  <Logo_Type ua="na">Default</Logo_Type> <!-- options: Default/Download BMP Picture/Text Logo -->
+  <Text_Logo ua="na"></Text_Logo>
+  <Background_Picture_Type ua="na">Default</Background_Picture_Type> <!-- options: Default/Download BMP Picture -->
+  <BMP_Picture_Download_URL ua="na"></BMP_Picture_Download_URL>
+
+  <!-- General -->
+
+  <Station_Name ua="na"></Station_Name>
+  <Station_Display_Name ua="na"></Station_Display_Name>
+  <Voice_Mail_Number ua="na"></Voice_Mail_Number>
+
+  <!-- Line Key 1 -->
+
+  <Extension_1_ ua="na">1</Extension_1_> <!-- options: 1/2/3/4/5/Disabled -->
+  <Short_Name_1_ ua="na">$USER</Short_Name_1_>
+  <Share_Call_Appearance_1_ ua="na">private</Share_Call_Appearance_1_> <!-- options: private/shared -->
+  <Extended_Function_1_ ua="na"></Extended_Function_1_>
+
+  <!-- Line Key 2 -->
+
+  <Extension_2_ ua="na">1</Extension_2_> <!-- options: 1/2/3/4/5/Disabled -->
+  <Short_Name_2_ ua="na">$USER</Short_Name_2_>
+  <Share_Call_Appearance_2_ ua="na">private</Share_Call_Appearance_2_> <!-- options: private/shared -->
+  <Extended_Function_2_ ua="na"></Extended_Function_2_>
+
+  <!-- Line Key 3 -->
+
+  <Extension_3_ ua="na">1</Extension_3_> <!-- options: 1/2/3/4/5/Disabled -->
+  <Short_Name_3_ ua="na">$USER</Short_Name_3_>
+  <Share_Call_Appearance_3_ ua="na">private</Share_Call_Appearance_3_> <!-- options: private/shared -->
+  <Extended_Function_3_ ua="na"></Extended_Function_3_>
+
+  <!-- Line Key 4 -->
+
+  <Extension_4_ ua="na">1</Extension_4_> <!-- options: 1/2/3/4/5/Disabled -->
+  <Short_Name_4_ ua="na">$USER</Short_Name_4_>
+  <Share_Call_Appearance_4_ ua="na">private</Share_Call_Appearance_4_> <!-- options: private/shared -->
+  <Extended_Function_4_ ua="na"></Extended_Function_4_>
+
+  <!-- Line Key 5 -->
+
+  <Extension_5_ ua="na">1</Extension_5_> <!-- options: 1/2/3/4/5/Disabled -->
+  <Short_Name_5_ ua="na">$USER</Short_Name_5_>
+  <Share_Call_Appearance_5_ ua="na">private</Share_Call_Appearance_5_> <!-- options: private/shared -->
+  <Extended_Function_5_ ua="na"></Extended_Function_5_>
+
+  <!-- Miscellaneous Line Key Settings -->
+
+  <Line_ID_Mapping ua="na">Horizontal First</Line_ID_Mapping> <!-- options: Horizontal First/Vertical First -->
+  <SCA_Barge-In_Enable ua="na">No</SCA_Barge-In_Enable>
+  <SCA_Sticky_Auto_Line_Seize ua="na">No</SCA_Sticky_Auto_Line_Seize>
+  <Call_Appearance_Per_Line ua="na">2</Call_Appearance_Per_Line> <!-- options: 2/3/4/5/6/7/8/9/10 -->
+  <Softkey_Navigation_Style ua="na">Scrollable</Softkey_Navigation_Style> <!-- options: Scrollable/More -->
+
+  <!-- Line Key LED Pattern -->
+
+  <Idle_LED ua="na"></Idle_LED>
+  <Remote_Undefined_LED ua="na"></Remote_Undefined_LED>
+  <Local_Seized_LED ua="na"></Local_Seized_LED>
+  <Remote_Seized_LED ua="na"></Remote_Seized_LED>
+  <Local_Progressing_LED ua="na"></Local_Progressing_LED>
+  <Remote_Progressing_LED ua="na"></Remote_Progressing_LED>
+  <Local_Ringing_LED ua="na"></Local_Ringing_LED>
+  <Remote_Ringing_LED ua="na"></Remote_Ringing_LED>
+  <Local_Active_LED ua="na"></Local_Active_LED>
+  <Remote_Active_LED ua="na"></Remote_Active_LED>
+  <Local_Held_LED ua="na"></Local_Held_LED>
+  <Remote_Held_LED ua="na"></Remote_Held_LED>
+  <Register_Failed_LED ua="na"></Register_Failed_LED>
+  <Disabled_LED ua="na"></Disabled_LED>
+  <Registering_LED ua="na"></Registering_LED>
+  <Call_Back_Active_LED ua="na"></Call_Back_Active_LED>
+  <Trunk_No_Service_LED ua="na"></Trunk_No_Service_LED>
+  <Trunk_Reserved_LED ua="na"></Trunk_Reserved_LED>
+  <Trunk_In-use_LED ua="na"></Trunk_In-use_LED>
+
+  <!-- Supplementary Services -->
+
+  <Conference_Serv ua="na">Yes</Conference_Serv>
+  <Attn_Transfer_Serv ua="na">Yes</Attn_Transfer_Serv>
+  <Blind_Transfer_Serv ua="na">Yes</Blind_Transfer_Serv>
+  <DND_Serv ua="na">Yes</DND_Serv>
+  <Block_ANC_Serv ua="na">Yes</Block_ANC_Serv>
+  <Call_Back_Serv ua="na">Yes</Call_Back_Serv>
+  <Block_CID_Serv ua="na">Yes</Block_CID_Serv>
+  <Secure_Call_Serv ua="na">Yes</Secure_Call_Serv>
+  <Cfwd_All_Serv ua="na">Yes</Cfwd_All_Serv>
+  <Cfwd_Busy_Serv ua="na">Yes</Cfwd_Busy_Serv>
+  <Cfwd_No_Ans_Serv ua="na">Yes</Cfwd_No_Ans_Serv>
+  <Paging_Serv ua="na">Yes</Paging_Serv>
+  <Call_Park_Serv ua="na">Yes</Call_Park_Serv>
+  <Call_Pick_Up_Serv ua="na">Yes</Call_Pick_Up_Serv>
+  <ACD_Login_Serv ua="na">No</ACD_Login_Serv>
+  <Group_Call_Pick_Up_Serv ua="na">Yes</Group_Call_Pick_Up_Serv>
+  <ACD_Ext ua="na">1</ACD_Ext> <!-- options: 1/2/3/4/5 -->
+  <Service_Annc_Serv ua="na">No</Service_Annc_Serv>
+  <Web_Serv ua="na">Yes</Web_Serv>
+  <SMS_Serv ua="na">Yes</SMS_Serv>
+
+  <!-- Ring Tone -->
+
+  <Ring1 ua="na">n=Cisco Synth;w=file://Cisco_synth_ring1.mp3;c=0</Ring1>
+  <Ring2 ua="na">n=Retro;w=file://ringin.726;c=1</Ring2>
+  <Ring3 ua="na">n=Office;w=file://thx-short.726;c=1</Ring3>
+  <Ring4 ua="na">n=Analog Synth;w=file://Analog1.raw;c=1</Ring4>
+  <Ring5 ua="na">n=Are You There;w=file://AreYouThereF.raw;c=1</Ring5>
+  <Ring6 ua="na">n=Chime;w=file://Chime.raw;c=1</Ring6>
+  <Ring7 ua="na">n=Clock Shop;w=file://ClockShop.raw;c=1</Ring7>
+  <Ring8 ua="na">n=Film Score;w=file://FilmScore.raw;c=1</Ring8>
+  <Ring9 ua="na">n=Koto Effect;w=file://KotoEffect.raw;c=1</Ring9>
+  <Ring10 ua="na">n=Piano;w=file://Piano2.raw;c=1</Ring10>
+  <Ring11 ua="na">n=Pulse;w=file://Pulse1.raw;c=1</Ring11>
+  <Ring12 ua="na">n=Du-dut;w=file://Ring7.raw;c=1</Ring12>
+  <Silent_Ring_Duration ua="na">60</Silent_Ring_Duration>
+
+  <!-- Audio Input Gain (dB) -->
+
+  <Handset_Input_Gain ua="na">0</Handset_Input_Gain> <!-- options: -6/0/6/9 -->
+  <Headset_Input_Gain ua="na">0</Headset_Input_Gain> <!-- options: -6/0/6/9 -->
+  <Speakerphone_Input_Gain ua="na">0</Speakerphone_Input_Gain> <!-- options: -6/0/6/9 -->
+  <Bluetooth_Input_Gain ua="na">0</Bluetooth_Input_Gain> <!-- options: -6/0/6/9 -->
+  <Handset_Additional_Input_Gain ua="na">0</Handset_Additional_Input_Gain> <!-- options: -3/-2/-1/0/1/2/3 -->
+  <Headset_Additional_Input_Gain ua="na">0</Headset_Additional_Input_Gain> <!-- options: -3/-2/-1/0/1/2/3 -->
+  <Speakerphone_Additional_Input_Gain ua="na">0</Speakerphone_Additional_Input_Gain> <!-- options: -3/-2/-1/0/1/2/3 -->
+  <Bluetooth_Additional_Input_Gain ua="na">0</Bluetooth_Additional_Input_Gain> <!-- options: -3/-2/-1/0/1/2/3 -->
+
+  <!-- Extension Mobility -->
+
+  <EM_Enable ua="na">No</EM_Enable>
+  <EM_User_Domain ua="na"></EM_User_Domain>
+  <EM_Phone_User_ID ua="na"></EM_Phone_User_ID>
+  <EM_Phone_Password ua="na"></EM_Phone_Password>
+  <EM_Mobile_User_ID ua="na"></EM_Mobile_User_ID>
+  <EM_Mobile_Password ua="na"></EM_Mobile_Password>
+
+  <!-- Broadsoft Settings -->
+
+  <Directory_Enable ua="na">No</Directory_Enable>
+  <XSI_Host_Server ua="na"></XSI_Host_Server>
+  <Directory_Name ua="na"></Directory_Name>
+  <Directory_Type ua="na">Enterprise</Directory_Type> <!-- options: Enterprise/Group/Personal -->
+  <Directory_UserID ua="na"></Directory_UserID>
+  <Directory_Password ua="na"></Directory_Password>
+
+  <!-- XML Service -->
+
+  <XML_Directory_Service_Name ua="na"></XML_Directory_Service_Name>
+  <XML_Directory_Service_URL ua="na"></XML_Directory_Service_URL>
+  <XML_Application_Service_Name ua="na"></XML_Application_Service_Name>
+  <XML_Application_Service_URL ua="na"></XML_Application_Service_URL>
+  <XML_User_Name ua="na"></XML_User_Name>
+  <XML_Password ua="na"></XML_Password>
+  <CISCO_XML_EXE_Enable ua="na">No</CISCO_XML_EXE_Enable>
+  <CISCO_XML_EXE_Auth_Mode ua="na">Local Credential</CISCO_XML_EXE_Auth_Mode> <!-- options: Trusted/Local Credential/Remote Credential -->
+
+  <!-- Multiple Paging Group Parameters -->
+
+  <Group_Paging_Script ua="na">pggrp=224.168.168.168:34560;name=All;num=800;listen=yes;</Group_Paging_Script>
+
+  <!-- LDAP -->
+
+  <LDAP_Dir_Enable ua="na">No</LDAP_Dir_Enable>
+  <Corp_Dir_Name ua="na"></Corp_Dir_Name>
+  <Server ua="na"></Server>
+  <Search_Base ua="na"></Search_Base>
+  <Client_DN ua="na"></Client_DN>
+  <User_Name ua="na"></User_Name>
+  <Password ua="na"></Password>
+  <Auth_Type ua="na">None</Auth_Type> <!-- options: None/Simple/MD5-Digest -->
+  <Last_Name_Filter ua="na"></Last_Name_Filter>
+  <First_Name_Filter ua="na"></First_Name_Filter>
+  <Search_Item_3 ua="na"></Search_Item_3>
+  <Search_Item_3_Filter ua="na"></Search_Item_3_Filter>
+  <Search_Item_4 ua="na"></Search_Item_4>
+  <Search_Item_4_Filter ua="na"></Search_Item_4_Filter>
+  <Display_Attr ua="na"></Display_Attr>
+  <Number_Mapping ua="na"></Number_Mapping>
+
+  <!-- Programmable Softkeys -->
+
+  <Programmable_Softkey_Enable ua="na">No</Programmable_Softkey_Enable>
+  <Idle_Key_List ua="na">em_login;acd_login;acd_logout;astate;avail;unavail;redial;dir;cfwd;dnd;lcr;pickup;gpickup;unpark;em_logout;guestin;guestout;</Idle_Key_List>
+  <Missed_Call_Key_List ua="na">lcr|1;miss|4;</Missed_Call_Key_List>
+  <Off_Hook_Key_List ua="na">option;redial;dir;cfwd;dnd;lcr;unpark;pickup;gpickup;</Off_Hook_Key_List>
+  <Dialing_Input_Key_List ua="na">option|1;dial|2;delchr|3;cancel|4;</Dialing_Input_Key_List>
+  <Progressing_Key_List ua="na">endcall|2;</Progressing_Key_List>
+  <Connected_Key_List ua="na">hold|1;endcall|2;conf|3;xfer|4;crdstart;crdstop;bxfer;confLx;xferLx;park;phold;flash;dnd;</Connected_Key_List>
+  <Start-Xfer_Key_List ua="na">hold|1;endcall|2;xfer|4;crdstart;crdstop;dnd;</Start-Xfer_Key_List>
+  <Start-Conf_Key_List ua="na">hold|1;endcall|2;conf|3;crdstart;crdstop;dnd;</Start-Conf_Key_List>
+  <Conferencing_Key_List ua="na">hold|1;endcall|2;join|4;crdstart;crdstop;dnd;</Conferencing_Key_List>
+  <Releasing_Key_List ua="na">endcall|2;</Releasing_Key_List>
+  <Hold_Key_List ua="na">resume|1;endcall|2;newcall|3;redial;dir;cfwd;dnd;crdstart;crdstop;</Hold_Key_List>
+  <Ringing_Key_List ua="na">answer|1;ignore|2;</Ringing_Key_List>
+  <Shared_Active_Key_List ua="na">newcall|1;barge|2;cfwd|3;dnd|4;crdstart;crdstop;</Shared_Active_Key_List>
+  <Shared_Held_Key_List ua="na">resume|1;barge|2;cfwd|3;dnd|4;crdstart;crdstop;</Shared_Held_Key_List>
+  <PSK_1 ua="na"></PSK_1>
+  <PSK_2 ua="na"></PSK_2>
+  <PSK_3 ua="na"></PSK_3>
+  <PSK_4 ua="na"></PSK_4>
+  <PSK_5 ua="na"></PSK_5>
+  <PSK_6 ua="na"></PSK_6>
+  <PSK_7 ua="na"></PSK_7>
+  <PSK_8 ua="na"></PSK_8>
+  <PSK_9 ua="na"></PSK_9>
+  <PSK_10 ua="na"></PSK_10>
+  <PSK_11 ua="na"></PSK_11>
+  <PSK_12 ua="na"></PSK_12>
+  <PSK_13 ua="na"></PSK_13>
+  <PSK_14 ua="na"></PSK_14>
+  <PSK_15 ua="na"></PSK_15>
+  <PSK_16 ua="na"></PSK_16>
+
+  <!-- Call Audio Recording -->
+
+  <Record_Enable ua="rw">No</Record_Enable>
+  <Record_Beep_Reminder ua="rw">Yes</Record_Beep_Reminder>
+
+  <!-- Call Progress Tones -->
+
+  <Dial_Tone ua="na">350@-19,440@-19;10(*/0/1+2)</Dial_Tone>
+  <Bluetooth_Dial_Tone ua="na">350@-19,440@-19;1(0/*/0);10(*/0/1+2)</Bluetooth_Dial_Tone>
+  <Outside_Dial_Tone ua="na">420@-16;10(*/0/1)</Outside_Dial_Tone>
+  <Prompt_Tone ua="na">520@-19,620@-19;10(*/0/1+2)</Prompt_Tone>
+  <Busy_Tone ua="na">480@-19,620@-19;10(.5/.5/1+2)</Busy_Tone>
+  <Reorder_Tone ua="na">480@-19,620@-19;10(.25/.25/1+2)</Reorder_Tone>
+  <Off_Hook_Warning_Tone ua="na">480@-10,620@0;10(.125/.125/1+2)</Off_Hook_Warning_Tone>
+  <Ring_Back_Tone ua="na">440@-19,480@-19;*(2/4/1+2)</Ring_Back_Tone>
+  <Call_Waiting_Tone ua="na">440@-10;30(.3/9.7/1)</Call_Waiting_Tone>
+  <Confirm_Tone ua="na">600@-16;1(.25/.25/1)</Confirm_Tone>
+  <SIT1_Tone ua="na">985@-16,1428@-16,1777@-16;20(.380/0/1,.380/0/2,.380/0/3,0/4/0)</SIT1_Tone>
+  <SIT2_Tone ua="na">914@-16,1371@-16,1777@-16;20(.274/0/1,.274/0/2,.380/0/3,0/4/0)</SIT2_Tone>
+  <SIT3_Tone ua="na">914@-16,1371@-16,1777@-16;20(.380/0/1,.380/0/2,.380/0/3,0/4/0)</SIT3_Tone>
+  <SIT4_Tone ua="na">985@-16,1371@-16,1777@-16;20(.380/0/1,.274/0/2,.380/0/3,0/4/0)</SIT4_Tone>
+  <MWI_Dial_Tone ua="na">350@-19,440@-19;2(.1/.1/1+2);10(*/0/1+2)</MWI_Dial_Tone>
+  <Cfwd_Dial_Tone ua="na">350@-19,440@-19;2(.2/.2/1+2);10(*/0/1+2)</Cfwd_Dial_Tone>
+  <Holding_Tone ua="na">600@-19;25(.1/.1/1,.1/.1/1,.1/9.5/1)</Holding_Tone>
+  <Conference_Tone ua="na">350@-19;1(0/*/0);20(.1/.1/1,.1/9.7/1)</Conference_Tone>
+  <Secure_Call_Indication_Tone ua="na">397@-19,507@-19;15(0/2/0,.2/.1/1,.1/2.1/2)</Secure_Call_Indication_Tone>
+  <Page_Tone ua="na">600@-16;.3(.05/0.05/1)</Page_Tone>
+  <Low_Battery_Tone ua="na">1600@-16;2(.05/0.05/1,.05/.05/1,0/.5/0)</Low_Battery_Tone>
+  <Alert_Tone ua="na">600@-19;.2(.05/0.05/1)</Alert_Tone>
+  <System_Beep ua="na">600@-16;.1(.05/0.05/1)</System_Beep>
+  <Call_Pickup_Tone ua="na">440@-10;30(.3/9.7/1)</Call_Pickup_Tone>
+  <EHS_Active ua="na">697@-25, 1805@-25;.4(0/.2/0,.1/.1/1+2)</EHS_Active>
+  <EHS_Inactive ua="na">770@-25, 1805@-25,941@-25;.4(0/.1/0,.1/.065/1+2,.1/.035/2+3)</EHS_Inactive>
+  <EHS_RingAlert ua="na">852@-25, 1805@-25;.4(0/.2/0,.1/.1/1+2)</EHS_RingAlert>
+  <EHS_Reserved ua="na">941@-16, 1805@-16;.1(.1/0/1+2)</EHS_Reserved>
+
+  <!-- Distinctive Ring Patterns -->
+
+  <Cadence_1 ua="na">60(2/4)</Cadence_1>
+  <Cadence_2 ua="na">60(.3/.2,1/.2,.3/4)</Cadence_2>
+  <Cadence_3 ua="na">60(.8/.4,.8/4)</Cadence_3>
+  <Cadence_4 ua="na">60(.4/.2,.3/.2,.8/4)</Cadence_4>
+  <Cadence_5 ua="na">60(.2/.2,.2/.2,.2/.2,1/4)</Cadence_5>
+  <Cadence_6 ua="na">60(.2/.4,.2/.4,.2/4)</Cadence_6>
+  <Cadence_7 ua="na">60(4.5/4)</Cadence_7>
+  <Cadence_8 ua="na">60(0.25/9.75)</Cadence_8>
+  <Cadence_9 ua="na">60(.4/.2,.4/2)</Cadence_9>
+
+  <!-- Control Timer Values (sec) -->
+
+  <Reorder_Delay ua="na">255</Reorder_Delay>
+  <Call_Back_Expires ua="na">1800</Call_Back_Expires>
+  <Call_Back_Retry_Intvl ua="na">30</Call_Back_Retry_Intvl>
+  <Call_Back_Delay ua="na">.5</Call_Back_Delay>
+  <Interdigit_Long_Timer ua="na">10</Interdigit_Long_Timer>
+  <Interdigit_Short_Timer ua="na">3</Interdigit_Short_Timer>
+
+  <!-- Vertical Service Activation Codes -->
+
+  <Call_Return_Code ua="na">*69</Call_Return_Code>
+  <Blind_Transfer_Code ua="na">*98</Blind_Transfer_Code>
+  <Call_Back_Act_Code ua="na">*66</Call_Back_Act_Code>
+  <Call_Back_Deact_Code ua="na">*86</Call_Back_Deact_Code>
+  <Cfwd_All_Act_Code ua="na">*72</Cfwd_All_Act_Code>
+  <Cfwd_All_Deact_Code ua="na">*73</Cfwd_All_Deact_Code>
+  <Cfwd_Busy_Act_Code ua="na">*90</Cfwd_Busy_Act_Code>
+  <Cfwd_Busy_Deact_Code ua="na">*91</Cfwd_Busy_Deact_Code>
+  <Cfwd_No_Ans_Act_Code ua="na">*92</Cfwd_No_Ans_Act_Code>
+  <Cfwd_No_Ans_Deact_Code ua="na">*93</Cfwd_No_Ans_Deact_Code>
+  <CW_Act_Code ua="na">*56</CW_Act_Code>
+  <CW_Deact_Code ua="na">*57</CW_Deact_Code>
+  <CW_Per_Call_Act_Code ua="na">*71</CW_Per_Call_Act_Code>
+  <CW_Per_Call_Deact_Code ua="na">*70</CW_Per_Call_Deact_Code>
+  <Block_CID_Act_Code ua="na">*67</Block_CID_Act_Code>
+  <Block_CID_Deact_Code ua="na">*68</Block_CID_Deact_Code>
+  <Block_CID_Per_Call_Act_Code ua="na">*81</Block_CID_Per_Call_Act_Code>
+  <Block_CID_Per_Call_Deact_Code ua="na">*82</Block_CID_Per_Call_Deact_Code>
+  <Block_ANC_Act_Code ua="na">*77</Block_ANC_Act_Code>
+  <Block_ANC_Deact_Code ua="na">*87</Block_ANC_Deact_Code>
+  <DND_Act_Code ua="na">*78</DND_Act_Code>
+  <DND_Deact_Code ua="na">*79</DND_Deact_Code>
+  <Secure_All_Call_Act_Code ua="na">*16</Secure_All_Call_Act_Code>
+  <Secure_No_Call_Act_Code ua="na">*17</Secure_No_Call_Act_Code>
+  <Secure_One_Call_Act_Code ua="na">*18</Secure_One_Call_Act_Code>
+  <Secure_One_Call_Deact_Code ua="na">*19</Secure_One_Call_Deact_Code>
+  <Paging_Code ua="na">*96</Paging_Code>
+  <Call_Park_Code ua="na">*38</Call_Park_Code>
+  <Call_Pickup_Code ua="na">*36</Call_Pickup_Code>
+  <Call_UnPark_Code ua="na">*39</Call_UnPark_Code>
+  <Group_Call_Pickup_Code ua="na">*37</Group_Call_Pickup_Code>
+  <Media_Loopback_Code ua="na">*03</Media_Loopback_Code>
+  <Referral_Services_Codes ua="na"></Referral_Services_Codes>
+  <Feature_Dial_Services_Codes ua="na"></Feature_Dial_Services_Codes>
+
+  <!-- Vertical Service Announcement Codes -->
+
+  <Service_Annc_Base_Number ua="na"></Service_Annc_Base_Number>
+  <Service_Annc_Extension_Codes ua="na"></Service_Annc_Extension_Codes>
+
+  <!-- Outbound Call Codec Selection Codes -->
+
+  <Prefer_G711u_Code ua="na">*017110</Prefer_G711u_Code>
+  <Force_G711u_Code ua="na">*027110</Force_G711u_Code>
+  <Prefer_G711a_Code ua="na">*017111</Prefer_G711a_Code>
+  <Force_G711a_Code ua="na">*027111</Force_G711a_Code>
+  <Prefer_G722_Code ua="na">*01722</Prefer_G722_Code>
+  <Force_G722_Code ua="na">*02722</Force_G722_Code>
+  <Prefer_L16_Code ua="na">*01016</Prefer_L16_Code>
+  <Force_L16_Code ua="na">*02016</Force_L16_Code>
+  <Prefer_G726r32_Code ua="na">*0172632</Prefer_G726r32_Code>
+  <Force_G726r32_Code ua="na">*0272632</Force_G726r32_Code>
+  <Prefer_G729a_Code ua="na">*01729</Prefer_G729a_Code>
+  <Force_G729a_Code ua="na">*02729</Force_G729a_Code>
+
+  <!-- Time -->
+
+  <Ignore_DHCP_Time_Offset ua="na">No</Ignore_DHCP_Time_Offset>
+  <Daylight_Saving_Time_Enable ua="na">No</Daylight_Saving_Time_Enable>
+
+  <!-- Language -->
+
+  <Dictionary_Server_Script ua="na">serv=http://${SERVER}:8088/phoneprov/; d0=English; x0=spa525_en_v761.xml; d1=Russian; x1=spa525_ru_v761.xml;</Dictionary_Server_Script>
+  <Language_Selection ua="na">Russian</Language_Selection>
+  <Locale ua="na">ru-RU</Locale> <!-- options: en-US/en-CA/en-AU/en-GB/fr-FR/fr-CA/es-ES/it-IT/de-DE/nn-NO/pt-PT/nl-NL/sv-SE/pt-BZ/es-MX/en-NZ/da-DK/he-IL/ru-RU/pl-PL/tr-TR/cs-CZ/hu-HU/fi-FI/sk-SK/bg-BG/hr-HR -->
+
+  <!-- Miscellaneous -->
+
+  <DTMF_Playback_Level ua="na">-16</DTMF_Playback_Level>
+  <DTMF_Playback_Length ua="na">.1</DTMF_Playback_Length>
+  <Inband_DTMF_Boost ua="na">12dB</Inband_DTMF_Boost> <!-- options: 0dB/3dB/6dB/9dB/12dB/15dB/18dB -->
+  <Show_DTMF_Digits_When_Connected ua="na">No</Show_DTMF_Digits_When_Connected> <!-- options: No/Yes/Masked -->
+
+  <!-- General -->
+
+  <Subscribe_Expires ua="na">1800</Subscribe_Expires>
+  <Subscribe_Retry_Interval ua="na">30</Subscribe_Retry_Interval>
+  <Unit_1_Enable ua="na">Yes</Unit_1_Enable>
+  <Subscribe_Delay ua="na">1</Subscribe_Delay>
+  <Unit_2_Enable ua="na">Yes</Unit_2_Enable>
+  <Server_Type ua="na">Broadsoft</Server_Type> <!-- options: Broadsoft/SPA9000/Asterisk/RFC3265_4235/Sylantro -->
+  <Test_Mode_Enable ua="na">No</Test_Mode_Enable>
+  <Attendant_Console_Call_Pickup_Code ua="na">*98</Attendant_Console_Call_Pickup_Code>
+  <Attendant_Console_Call_Park_Code ua="na">*68</Attendant_Console_Call_Park_Code>
+  <Attendant_Console_Call_unPark_Code ua="na">*88</Attendant_Console_Call_unPark_Code>
+  <BLF_List_URI ua="na"></BLF_List_URI>
+  <Use_Line_Keys_For_BLF_List ua="na">No</Use_Line_Keys_For_BLF_List>
+  <Call_Pickup_Audio_Notification ua="na">No</Call_Pickup_Audio_Notification>
+  <Attendant_Console_Font_Size ua="na">10</Attendant_Console_Font_Size> <!-- options: 10/12/8 -->
+  <Attendant_Console_LCD_Contrast ua="na">12</Attendant_Console_LCD_Contrast>
+  <BXfer_To_Starcode_Enable ua="na">No</BXfer_To_Starcode_Enable>
+  <BXfer_On_Speed_Dial_Enable ua="na">Yes</BXfer_On_Speed_Dial_Enable>
+  <BLF_Label_Display_Mode ua="na">Name</BLF_Label_Display_Mode> <!-- options: Name/Ext/Both -->
+
+  <!-- Att Console Key LED Pattern -->
+
+  <Application_LED ua="na"></Application_LED>
+  <Serv_Subscribe_Failed_LED ua="na"></Serv_Subscribe_Failed_LED>
+  <Serv_Subscribing_LED ua="na"></Serv_Subscribing_LED>
+  <SNRM_Day_Mode_LED ua="na"></SNRM_Day_Mode_LED>
+  <SNRM_Night_Mode_LED ua="na"></SNRM_Night_Mode_LED>
+  <Parking_Lot_Idle_LED ua="na"></Parking_Lot_Idle_LED>
+  <Parking_Lot_Busy_LED ua="na"></Parking_Lot_Busy_LED>
+  <BLF_Idle_LED ua="na"></BLF_Idle_LED>
+  <BLF_Ringing_LED ua="na"></BLF_Ringing_LED>
+  <BLF_Busy_LED ua="na"></BLF_Busy_LED>
+  <BLF_Held_LED ua="na"></BLF_Held_LED>
+
+</flat-profile>

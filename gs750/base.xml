@@ -284,7 +284,7 @@
 <!--# Help: Automatic Upgrade. Check for new firmware/config file every () minutes, unit is in minute, minimum 60 minutes, default is 7 days. P194=3-->
 <!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[5-5256000] -->
 <!--# Default Value: 10080-->
-    <P193>5</P193>
+    <P193>0</P193>
 
 
 <!--# Name: 194-->
@@ -292,7 +292,7 @@
 <!--# Help: Automatic Upgrade. 0 - No, 1 - Check daily, 2 - Check weekly, 3 - Check every () minutes. Default is No.-->
 <!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[0-3] -->
 <!--# Default Value: 0-->
-    <P194>1</P194>
+    <P194>0</P194>
 
 
 
@@ -318,7 +318,7 @@
 <!--# Help: Syslog Level (Default setting is NONE)-->
 <!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[0-5] -->
 <!--# Default Value: 0-->
-    <P208>5</P208>
+    <P208>2</P208>
 
 
 <!--# Name: 209-->
@@ -651,13 +651,6 @@
 <!--# Default Value:-->
     <P967>${BACKUP_SERVER}</P967>
 
-
-<!--# Name: 1414-->
-<!--# Alias: 3CX Provisoning-->
-<!--# Help: Phone will multicast SUBSCRIBE if this is enabled -->
-<!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[0-1] -->
-<!--# Default Value: 1-->
-    <P1414>0</P1414>
 
 <!--# Name: 2301-->
 <!--# Alias: SIP_PROFILE_1_ENABLE_DTMF_VIA_AUDIO-->
