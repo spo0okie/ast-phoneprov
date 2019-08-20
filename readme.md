@@ -8,6 +8,6 @@
 ### Grandstream
 * DP750 - база - поддерживается 100%, есть проблемы с файловером (не такой крутой как у Cisco)
 * DP720 - трубка - поддерживается 100%
-* DP760 - Репитер для базы. Не поддерживается никак. Опыт успешного внедрения есть, но провижионинг для него не применялся.
+* DP760 - Репитер для базы. Не поддерживается никак. Опыт успешного внедрения есть, но провижионинг для него не применялся.  
 Поддерживаются только прошивки 1.0.4.10 и возможно более старые. Следующая после 1.0.4.10 версия - 1.0.7.5(янв 2019) идет как первая для новых моделей 752/730, там перелопачен весь гуй и даунгрейда обратно нет. Сосбтвенно на эту опасную территорию я ни разу не совался, хотя написано что, начиная с 1.0.7.5 у них появился более понятный/структурированный XML:  
 Since 1.0.7.5, we have added support for new format of P values, for the old <Pxx>value</Pxx> format, in the xml config file, please use <config version="1">; for the new format of P value, that is <item name="xx.xx.xx.xx.xx">value</item>, in the xml config file, please use <config version="2">. DP7xx now support both format XML config file but will not work if the version number is wrong
