@@ -52,6 +52,13 @@
     <P32>3</P32>
 
 
+<!--# Name: 40-->
+<!--# Alias:-->
+<!--# Help: Local SIP Port.-->
+<!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[1-65535] -->
+<!--# Default Value: 5060-->
+    <P40>5060</P40>
+
 <!--# Name: 47-->
 <!--# Alias:-->
 <!--# Help: SIP Server-->
@@ -66,6 +73,13 @@
 <!--# Attributes: Category=SERVERADDRESS Mandatory=0 -->
 <!--# Default Value:-->
     <P48></P48>
+
+<!--# Name: 52-->
+<!--# Alias:-->
+<!--# Help: NAT Traversal. 0 - No, 1 - STUN, 2 - keep alive.-->
+<!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[0-2] -->
+<!--# Default Value: 0-->
+    <P52>2</P52>
 
 
 <!--# Name: 57-->
@@ -212,7 +226,7 @@
 <!--# Help: Allow DHCP Option 43 and Option 66 to override server. 0 - No, 1 - Yes. Default is 1. When set to Yes(1), it will override the configured provision path and method-->
 <!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[0-1] -->
 <!--# Default Value: 1-->
-    <P145>0</P145>
+    <P145>1</P145>
 
 
 <!--# Name: 146-->
@@ -2096,6 +2110,15 @@
 <!--# Attributes: Category=STRING Mandatory=0 Max Length=20 ASCII-only=true-->
 <!--# Default Value:-->
     <POFFHOOK_AUTO_DIAL_NUM_HS10></POFFHOOK_AUTO_DIAL_NUM_HS10>
+
+
+<!--# Name: 4567-->
+<!--# Alias: Если я все правильно понял то это Prefer Primary SIP Server -->
+<!--# Help: Если 0, то он может звонит на резервный, даже если основной доступен - это коверкает диалплан -->
+<!--# Attributes: Category=NUMBER Mandatory=1 Base=10 Range=[0-1] -->
+<!--# Default Value: 0-->
+    <P4567>1</P4567>
+
 
 <!--# Name: 8020-->
 <!--# Alias: GS_LDAP_SERVER_ADDRESS-->
