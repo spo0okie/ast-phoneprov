@@ -234,7 +234,7 @@
 <!--# Help: Host name, DHCP option 12. Max length allowed is 64 characters-->
 <!--# Attributes: Category=ADDRESS Mandatory=0 -->
 <!--# Default Value:-->
-    <P146></P146>
+<!--<P146></P146>-->
 
 
 <!--# Name: 147-->
@@ -2356,7 +2356,7 @@
 <!--# Help: If configured, only the handset configuration file with the matching encrypted prefix will be downloaded and flashed into the device. If the file is located in a subdirectory on the provisioning server, the directory should be included here; for example "handset/ipei_".-->
 <!--# Attributes: Category=STRING Mandatory=0 Max Length=32 ASCII-only=false-->
 <!--# Default Value: ipei_-->
-    <PHSCONFIG_PREFIX>ipei_</PHSCONFIG_PREFIX>
+    <PHSCONFIG_PREFIX>GS750/ipei_</PHSCONFIG_PREFIX>
 
 
 <!--# Name: 27016-->
