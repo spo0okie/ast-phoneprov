@@ -236,6 +236,22 @@
     <!-- # Firmware File Postfix -->
     <!-- # String -->
     <P233></P233>
+    
+    <!-- # Automatic Upgrade -->
+    <!-- # 0 - No,  -->
+    <!-- # 1 - Yes, check for upgrade based on minute(s) setting, -->
+    <!-- # 2 - Yes, check for upgrade based on Hour of Day setting, -->
+    <!-- # 3 - Yes, check for upgrade based on Day of Week setting, -->
+    <!-- # Default is No. -->
+    <!-- # Number: 0, 1, 2, 3 -->
+    <!-- # Mandatory -->
+    <P194>1</P194>
+
+    <!-- # Check for new firmware every () minutes. Default is 7 days. -->
+    <!-- # Number: 60-86400 -->
+    <!-- # Mandatory -->
+    <P193>30</P193>
+
 
     <!-- ############################################################################## -->
     <!-- ##  Maintenance/Syslog -->
